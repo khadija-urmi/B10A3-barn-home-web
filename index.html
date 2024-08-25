@@ -4,10 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- taiwind & DaisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(171, 239, 95)',
+                        secondary: 'rgb(17, 17, 17)',
+                    },
+                    fontFamily: {
+                        Manrope: 'Manrope',
+                    },
+
+                },
+            },
+        }
+    </script>
+    <title>Rinterio</title>
 </head>
 
-<body>
+<body class="font-Manrope">
+    <header>
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start flex items-center gap-2">
+                    <i
+                        class="fa-solid fa-arrow-up w-8 h-8 flex items-center justify-center rounded-full bg-primary rotate-45"></i>
+                    <h2 class="text-3xl font-extrabold">Rinterio</h2>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li>
+                            <a class="hover:text-black hover:bg-primary hover:font-bold transition-colors ease-in-out duration-200 text-gray-700
+                        ">Home</a>
+                        </li>
+                        <li><a class="hover:text-black hover:bg-primary hover:font-bold transition-colors ease-in-out duration-200 text-gray-700
+                        ">Service</a></li>
+                        <li><a class="hover:text-black hover:bg-primary hover:font-bold transition-colors ease-in-out duration-200 text-gray-700
+                        ">Portfolio</a></li>
+                        <li><a class="hover:text-black hover:bg-primary hover:font-bold transition-colors ease-in-out duration-200 text-gray-700
+                        ">Blogs</a></li>
+                        <li><a class="hover:text-black hover:bg-primary hover:font-bold transition-colors ease-in-out duration-200 text-gray-700
+                        ">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <!-- button -->
+                    <div class="flex justify-center items-center gap-3">
+                        <button class="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button
+                            class="flex items-center gap-2  bg-primary px-6 py-3 rounded-full font-bold  text-lg transition-colors duration-200">
+                            <span class="text-black">Book Consult</span>
+                            <i
+                                class="fa-solid fa-arrow-up w-7 h-7 flex items-center justify-center rounded-full bg-black rotate-45 text-white">
+                            </i>
+                        </button>
+                    </div>
+                    <!-- menu bar -->
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="dropdown">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Homepage</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
 
