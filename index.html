@@ -26,7 +26,8 @@
                         customPink: 'rgb(231, 193, 211)',
                         customYellow: 'rgb(239, 218, 110)',
                         customPaste: 'rgb(164, 218, 195)',
-                        customBlue: 'rgb(119, 170, 234)'
+                        customBlue: 'rgb(119, 170, 234)',
+                        footerBg: 'rgb(28, 28, 28)',
 
                     },
                     fontFamily: {
@@ -279,23 +280,25 @@
         <!-- Let's discuss section -->
         <section class="mb-20">
             <div class="bg-bg_img bg-cover bg-center bg-no-repeat h-screen">
-                <div class="max-w-4xl mx-auto  p-8 rounded-lg shadow-lg">
+                <div class="max-w-4xl mx-auto p-8 rounded-lg shadow-lg">
                     <p
-                        class="text-center text-sm bg-primary w-40  mx-auto  px-4 py-2 rounded-full font-bold mb-4 opacity-60 flex items-center justify-center gap-2">
+                        class="text-center text-sm bg-primary w-40 mx-auto px-4 py-2 rounded-full font-bold mb-4 opacity-60 flex items-center justify-center gap-2">
                         <i class="fa-solid fa-arrow-right text-lg"></i>
-                        <span class="text-black font-semibold">Let's Connect </span>
+                        <span class="text-black font-semibold">Let's Connect</span>
                     </p>
                     <h2 class="text-center text-3xl md:text-4xl font-bold mb-4">
-                        Let’s Discuss Next Project.</h2>
-                    <p class="text-center text-gray-600 mb-8">The barn house captivates with its blend of rustic charm
-                        and modern
-                        sophistication, featuring weathered wood, sleek metal accents.</p>
+                        Let’s Discuss Next Project.
+                    </h2>
+                    <p class="text-center text-gray-600 mb-8">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents.
+                    </p>
                     <form class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <input type="text" placeholder="First Name*"
                                 class="border border-gray-300 p-4 rounded-full focus:outline-none focus:ring-2 focus:ring-green-600">
                             <input type="text" placeholder="Last Name*"
-                                class="border border-gray-300 p-4 rounded-full  focus:outline-none focus:ring-2 focus:ring-green-600">
+                                class="border border-gray-300 p-4 rounded-full focus:outline-none focus:ring-2 focus:ring-green-600">
                             <input type="text" placeholder="Phone Number*"
                                 class="border border-gray-300 p-4 rounded-full focus:outline-none focus:ring-2 focus:ring-green-600">
                             <input type="email" placeholder="Email Number*"
@@ -308,17 +311,45 @@
                             <span>Send Mail</span>
                             <i
                                 class="fa-solid fa-arrow-up w-6 h-6 bg-black rotate-45 text-white flex items-center justify-center rounded-full"></i>
-
                         </button>
-
                     </form>
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
 
+    </main>
+    <footer class="bg-black text-white py-6 flex flex-col justify-center items-center">
+        <div class="w-11/12 mx-auto px-4 text-center">
+            <div class="flex flex-col items-center gap-2 mb-4">
+                <i
+                    class="fa-solid fa-arrow-up w-8 h-8 flex items-center justify-center rounded-full bg-primary rotate-45"></i>
+                <h2 class="text-3xl font-extrabold">Rinterio</h2>
+            </div>
+
+            <p class="font-bold text-custom_clr mb-6">
+                The barn house captivates with its blend of rustic charm and modern sophistication,<br />
+                featuring weathered wood, sleek metal accents.
+            </p>
+
+            <ul
+                class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-28 text-gray-400 mb-6">
+                <li><a href="#" class="hover:text-primary">Home</a></li>
+                <li><a href="#" class="hover:text-primary">Services</a></li>
+                <li><a href="#" class="hover:text-primary">Portfolio</a></li>
+                <li><a href="#" class="hover:text-primary">Blogs</a></li>
+                <li><a href="#" class="hover:text-primary">Contact Us</a></li>
+            </ul>
+            <div class="flex justify-center">
+                <button
+                    class="flex items-center gap-2 bg-primary px-4 py-2 rounded-full font-bold text-lg transition-colors duration-200">
+                    <span class="text-black">Book Consult</span>
+                    <i
+                        class="fa-solid fa-arrow-up w-6 h-6 flex items-center justify-center rounded-full bg-black rotate-45 text-white"></i>
+                </button>
+            </div>
+        </div>
     </footer>
+
 
 </body>
 
